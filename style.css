@@ -283,6 +283,8 @@
 
 .techskills{
     background-color:black;
+    padding-top: 60px;
+    padding-bottom: 90px;
     
 }
 .tech-skills-horizontal{
@@ -587,12 +589,19 @@
   text-align: center;
   margin-left: 450px;
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   background: linear-gradient(45deg, #ff6b6b, #5f27cd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   animation: glowing 3s ease-in-out infinite alternate;
+}
+@media screen and (max-width:1024px){
+  .techskills-heading{
+    width:60vw;
+    font-size: 45px;
+    margin-left: 30%;
+  }
 }
 
 /* Add a glowing effect */
@@ -646,11 +655,17 @@
 
 /* Soft Skills Container */
 .softskills-container {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 60px;
+  padding-bottom: 90px;
   background-color:rgb(0, 0, 0); /* Light background for contrast */
+}
+@media screen and (max-width:768px) {
+  .softskills-container{
+    height:900px;
+  }
 }
 
 /* Unique Styling for Soft Skills Heading */
@@ -673,6 +688,11 @@
   -webkit-text-fill-color: transparent;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   animation: glowing 3s ease-in-out infinite alternate;
+}
+@media screen and (max-width:1024px){
+  .softskills-heading{
+    font-size: 45px;
+  }
 }
 
 /* Add a glowing effect */
@@ -704,11 +724,13 @@
 .horizontal-container{
   overflow-y: scroll;
   scrollbar-width: thin;
-scrollbar-color: #888 #f1f1f1;
+  scrollbar-color: #888 #f1f1f1;
   max-height:340px;
   width:33%;
   border-radius: 12px;
 }
+
+
 /* Custom Scrollbar Styles */
 ::-webkit-scrollbar {
   width: 12px; /* Width of the scrollbar */
@@ -776,6 +798,14 @@ scrollbar-color: #888 #f1f1f1;
   font-size:14px;
 }
 
+@media screen and (max-width:1024px){
+  .ss-items{
+    padding: 15px;
+  }
+  .ss-heading{
+    font-size: 33px;
+  }
+}
 /* General Styling for Projects Section */
 .projects-container {
   padding: 50px 0;
@@ -804,6 +834,12 @@ scrollbar-color: #888 #f1f1f1;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   animation: glowing 3s ease-in-out infinite alternate;
 
+}
+
+@media screen and (max-width:1024px){
+  #animated-heading{
+    font-size: 45px;
+  }
 }
 
 /* Glowing animation */
@@ -838,6 +874,13 @@ scrollbar-color: #888 #f1f1f1;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin:20px;
 }
+
+@media screen and (max-width:786px){
+  .projects-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
  /* Project Cards Container */
 .projects-container {
   display: flex;
@@ -860,6 +903,13 @@ scrollbar-color: #888 #f1f1f1;
   position: relative;
   perspective: 1000px;
   cursor: pointer;
+}
+@media screen and (max-width:786px) {
+  .project-card{
+    width:260px;
+    height:370px;
+  }
+  
 }
 
 /* Unique Hover Effect with 3D rotation */
