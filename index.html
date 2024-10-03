@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -214,58 +214,70 @@
       <h2 class="projects-heading" id="animated-heading">My Projects</h2>
       <div class="projects-grid d-flex flex-row justify-content-center">
           <!-- Project 1 -->
-          <div class="project-card" onclick="openPopup(1)">
-              <img src="project1.jpeg" alt="Project 1">
-              <div class="project-info">
-                  <h3>Project 1</h3>
-                  <p>Short description of Project 1.</p>
+           <div class="mobile-cards">
+              <div class="project-card" onclick="openPopup(1)">
+                  <img src="Diet-Plan.webp" alt="Project 1" class="diet-img">
+                  <h3>Personalized Meal Planner</h3>
+                  <p class="pp-para">Read more <i class="fas fa-arrow-right icon"></i></p>
+      
               </div>
-          </div>
 
-          <!-- Project 2 -->
-          <div class="project-card" onclick="openPopup(2)">
-              <img src="project2.jpeg" alt="Project 2">
-              <div class="project-info">
-                  <h3>Project 2</h3>
-                  <p>Short description of Project 2.</p>
-              </div>
-          </div>
-
+              <!-- Project 2 -->
+              <div class="project-card" onclick="openPopup(2)">
+                <img src="jobby.png" alt="Project 1" class="diet-img">
+                <h3>Jobby App</h3>
+                <p class="pp-para">Read more <i class="fas fa-arrow-right icon"></i></p>
+            </div>
+      </div>
+      <div class="mobile-cards">
           <!-- Project 3 -->
           <div class="project-card" onclick="openPopup(3)">
-              <img src="project3.jpeg" alt="Project 3">
-              <div class="project-info">
-                  <h3>Project 3</h3>
-                  <p>Short description of Project 3.</p>
-              </div>
-          </div>
+            <img src="https://assets.ccbp.in/frontend/react-js/password-manager-lg-img.png" alt="Project 1" class="diet-img">
+            <h3>Password Manager</h3>
+            <p class="pp-para">Read more <i class="fas fa-arrow-right icon"></i></p>
+        </div>
 
           <!-- Project 4 -->
-          
+
+          <div class="project-card" onclick="openPopup(4)">
+            <img src="jobby.png" alt="Project 1" class="diet-img">
+            <h3>Emoji Game</h3>
+            <p class="pp-para">Read more <i class="fas fa-arrow-right icon"></i></p>
         </div>
+      </div>
+    </div>
     </div>
 
   <!-- Overlay -->
   <div class="overlay" id="overlay" onclick="closePopup()"></div>
 
   <!-- Project Popups -->
+  
   <div class="project-popup" id="popup1">
       <span class="close-popup" onclick="closePopup()">X</span>
-      <h2>Project 1 Details</h2>
-      <p>Detailed description of Project 1.</p>
+      <h2 class="pop-heading">About personalised Meal Planner...</h2>
+      <p class="pop-para">A Personalized Meal Planner is a smart and intuitive tool designed to create customized meal plans based on your individual preferences, dietary needs, and health goals. Whether you're aiming to lose weight, gain muscle, or maintain a balanced diet, this planner tailors meals to suit your lifestyle. It takes into account your food preferences (e.g., vegetarian, vegan, gluten-free), allergies, and nutritional requirements, providing you with a variety of delicious recipes and a complete grocery list. With its user-friendly interface, flexible meal swapping, and daily reminders, achieving your health and fitness goals has never been easier.</p>
   </div>
 
   <div class="project-popup" id="popup2">
       <span class="close-popup" onclick="closePopup()">X</span>
-      <h2>Project 2 Details</h2>
-      <p>Detailed description of Project 2.</p>
+      <h2 class="pop-heading">About Jobby  App...</h2>
+      <p class="pop-para">Jobby App is an online platform connecting students with internships and jobs. It offers opportunities in various fields like engineering, marketing, content writing, and more. Along with internships, it provides skill development courses to enhance employability and career prospects.
+      </p>
   </div>
 
   <div class="project-popup" id="popup3">
       <span class="close-popup" onclick="closePopup()">X</span>
-      <h2>Project 3 Details</h2>
-      <p>Detailed description of Project 3.</p>
+      <h2 class="pop-heading">About Password Manager...</h2>
+      <p class="pop-para">A password manager is a tool that securely stores and manages your passwords for different websites and applications. It encrypts your login credentials, allowing you to generate strong, unique passwords and automatically fill them in when needed. This improves security and saves time by eliminating the need to remember multiple passwords.</p>
   </div>
+
+  <div class="project-popup" id="popup4">
+    <span class="close-popup" onclick="closePopup()">X</span>
+    <h2 class="pop-heading">About Emoji Game...</h2>
+    <p class="pop-para">Each emoji or combination of emojis represents a clue, and players must interpret them to solve the puzzle. The game is often used in social media, mobile apps, and online quizzes as a lighthearted way to challenge friends or test quick thinking skills.
+    </p>
+</div>
 
 
 
@@ -283,8 +295,27 @@
       }
   </script>
 
-    
-
+<footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h3>PEDDI JNANA VARSHINI</h3>
+    </div>
+    <div class="footer-icons">
+      <a href="https://www.instagram.com" target="_blank" class="icon instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" class="icon linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://www.github.com" target="_blank" class="icon github">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2024 PEDDI JNANA VARSHINI | All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
 </body>
 
 </html>
