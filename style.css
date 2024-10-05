@@ -361,12 +361,13 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
   }
   .img2{
-    height:50px;
+    height:90px;
+    width:120px;
   }
   .cp-heading{
     color:#8e44ad;
     font-size:30px;
-    margin-top:20px;
+    margin-top:0;
   }
   .cp-para{
     color:rgb(18, 34, 34);
@@ -597,11 +598,18 @@
   animation: glowing 3s ease-in-out infinite alternate;
 }
 @media screen and (max-width:1024px){
+  .tech-skills-horizontal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   .techskills-heading{
     width:60vw;
     font-size: 45px;
-    margin-left: 30%;
+    margin-left: auto;
+    margin-right: 17%;
   }
+  
 }
 
 /* Add a glowing effect */
@@ -656,6 +664,7 @@
 /* Soft Skills Container */
 .softskills-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 60px;
@@ -725,7 +734,7 @@
   overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: #888 #f1f1f1;
-  max-height:340px;
+  max-height:540px;
   width:33%;
   border-radius: 12px;
 }
@@ -809,6 +818,8 @@
 /* General Styling for Projects Section */
 .projects-container {
   padding: 50px 0;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   background-color: black;
 }
@@ -821,10 +832,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; /* Makes the text gradient */
   text-align: center;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px; /* Increased letter spacing */
   margin-bottom: 50px;
-  max-width: 30%;
+  max-width: 100;
   margin-right: 80px;
   position: relative;
   z-index: 1;
